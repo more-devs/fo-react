@@ -7,12 +7,12 @@ function PersonaList() {
     const [personas, setPersonas] = useState([]);
 
     const getPersonas = async () => {
-        const res = await axios.get(`${API}/personas`);
+        const res = await axios.get(`${API}/personass`);
         setPersonas(res.data);
     };
 
     const eliminarPersona = async (id) => {
-        await axios.delete(`${API}/personas/${id}`);
+        await axios.delete(`${API}/personass/${id}`);
         getPersonas();
     };
 

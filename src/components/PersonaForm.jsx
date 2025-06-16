@@ -9,7 +9,7 @@ function PersonaForm() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        await axios.post(`${API}/personas`, { nombre, edad });
+        await axios.post(`${API}/personass`, { nombre, edad });
         setNombre('');
         setEdad('');
         window.location.reload(); // para actualizar la lista
